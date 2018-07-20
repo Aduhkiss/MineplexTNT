@@ -10,6 +10,13 @@ import net.angusbeefgaming.tnt.listener.ExplodeListener;
 import net.angusbeefgaming.tnt.listener.ThrowTNT;
 
 public class TNT extends JavaPlugin {
+	
+	/**
+	 * Mineplex TNT Engine
+	 * With Full API
+	 * 
+	 * Created by Atticus Zambrana
+	 */
 
 	@Override
 	public void onEnable() {
