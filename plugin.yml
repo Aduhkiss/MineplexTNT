@@ -1,0 +1,11 @@
+name: MineplexTNT
+main: net.angusbeefgaming.tnt.TNT
+author: ["Atticus Zambrana"]
+version: 1.0
+commands:
+  givetnt:
+    description: Give Player Throwable TNT
+  switchthrowengine: 
+    description: Toggle TNT Throwing Engine
+  switchexplodeengine:
+    description: Toggle TNT Exploding Engine
