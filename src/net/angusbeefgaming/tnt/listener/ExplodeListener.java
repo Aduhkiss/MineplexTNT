@@ -24,7 +24,8 @@ public class ExplodeListener implements Listener {
     		float y = (float) -2 + (float) (Math.random() * ((4 - -4) + 1));
     		float z = (float) -2 + (float) (Math.random() * ((2 - -2) + 1));
     		
-    		FallingBlock fallingBlock = b.getWorld().spawnFallingBlock(b.getLocation(),  b.getType(), b.getData());
+    		@SuppressWarnings("deprecation")
+			FallingBlock fallingBlock = b.getWorld().spawnFallingBlock(b.getLocation(),  b.getType(), b.getData());
     		fallingBlock.setDropItem(false);
     		fallingBlock.setVelocity(new Vector(x/3, y/3, z/3));
     		

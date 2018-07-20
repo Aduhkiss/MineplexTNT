@@ -17,6 +17,7 @@ public class ThrowTNT implements Listener {
     @SuppressWarnings({ "unchecked", "deprecation" })
 	@EventHandler
     public void onInteract(final PlayerInteractEvent event) {
+    	
     	if(!TNTApi.tntThrowing()) {
     		return;
     	}
@@ -32,9 +33,10 @@ public class ThrowTNT implements Listener {
                 else {
                     item.setAmount(item.getAmount() - 1);
                 }
-                final TNTPrimed tnt = (TNTPrimed)world.spawn(player.getLocation(), (Class)TNTPrimed.class);
+                @SuppressWarnings("rawtypes")
+				final TNTPrimed tnt = (TNTPrimed)world.spawn(player.getLocation(), (Class)TNTPrimed.class);
                 final Vector playerDirection = player.getLocation().getDirection();
-                final Vector smallerVector = playerDirection.multiply(1.0);
+                final Vector smallerVector = playerDirection.multiply(TNTApi.getPower());
                 tnt.setVelocity(smallerVector);
             }
         }

@@ -9,3 +9,5 @@ commands:
     description: Toggle TNT Throwing Engine
   switchexplodeengine:
     description: Toggle TNT Exploding Engine
+  setthrowforce:
+    description: Set Force used when throwing

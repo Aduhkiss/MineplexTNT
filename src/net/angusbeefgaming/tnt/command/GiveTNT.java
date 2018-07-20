@@ -47,7 +47,8 @@ public class GiveTNT implements CommandExecutor {
     	return item;
     }
 
-    private ItemStack nameItem(Material item, String name) {
+    @SuppressWarnings("unused")
+	private ItemStack nameItem(Material item, String name) {
     	return nameItem(new ItemStack(item), name);
     }
 }

@@ -11,6 +11,23 @@ public class TNTApi {
 	
 	private static boolean tntEnabled;
 	private static boolean tntExploding;
+	private static double power;
+	
+	/**
+	 * Set the Amount of force for throwing TNT
+	 * @param powers
+	 */
+	public static void setPower(double powers) {
+		power = powers;
+	}
+	
+	/**
+	 * Get the amount of force used for throwing tnt
+	 * @return
+	 */
+	public static double getPower() {
+		return power;
+	}
 	
 	/**
 	 * Toggle between Vanilla TNT, and Mineplex TNT Exploding
