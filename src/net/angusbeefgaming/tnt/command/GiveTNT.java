@@ -36,10 +36,7 @@ public class GiveTNT implements CommandExecutor {
 		TNTApi.giveTNT(target);
 		
 		target.sendMessage(ChatColor.GOLD + "You were given " + amount + " Throwing TNT!");
-		
-		if(!TNTApi.tntThrowing()) {
-			target.sendMessage(ChatColor.RED + "Please note that TNT is currently set to Vanilla mode right now!");
-		}
+
 		return true;
 	}
 	

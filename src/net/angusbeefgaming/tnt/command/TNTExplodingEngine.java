@@ -14,7 +14,7 @@ public class TNTExplodingEngine implements CommandExecutor {
 			return false;
 		}
 
-		if(TNTApi.tntThrowing()) {
+		if(TNTApi.tntExploding()) {
 			sender.sendMessage(ChatColor.GREEN + "TNT Exploding Engine Switched to: VANILLA");
 			TNTApi.toggleTntExploding(false);
 			return true;
